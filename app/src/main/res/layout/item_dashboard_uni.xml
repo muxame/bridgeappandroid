@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="240dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="0dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="230dp"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"
+        android:id="@+id/ivUni"
+        app:riv_corner_radius="@dimen/margin_small"/>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="250dp"
+        android:layout_height="135dp"
+        android:visibility="gone"
+        android:scaleType="centerCrop"
+        android:src="@drawable/top_shadow"
+        app:riv_corner_radius="@dimen/margin_small"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivUni"
+        android:layout_marginTop="@dimen/margin_xsmall"
+        android:id="@+id/nameView"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvUni"
+            android:singleLine="true"
+            android:textSize="@dimen/text_xsmall"
+            android:textColor="@color/red"
+            android:text="Harvard University"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/blue_arrow"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvAddress"
+        android:layout_below="@+id/nameView"
+        android:layout_marginTop="@dimen/margin_xxsmall"
+        android:maxLines="1"
+        android:textSize="@dimen/text_small"
+        android:text="London, United Kingdom"/>
+
+
+
+</RelativeLayout>

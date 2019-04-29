@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.bridgeint.app.fragments.HowToApplyFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/activity_margin"
+                android:paddingRight="@dimen/activity_margin"
+                android:paddingLeft="@dimen/activity_margin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvCity"
+                    android:textSize="@dimen/text_large"
+                    android:textColor="@android:color/holo_red_light"
+                    android:text="London, England"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvAddress"
+                    android:textSize="@dimen/text_medium"
+                    android:textColor="#000000"
+                    android:layout_marginTop="@dimen/margin_xsmall"
+                    android:text="The Broughts London NW4 4BT UK"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:id="@+id/tvDescription"
+                    android:lineSpacingExtra="2dp"
+                    android:gravity="left"
+                    android:visibility="gone"
+                    android:textSize="16sp"
+                    android:textColor="@color/dark_gray"
+                    android:paddingBottom="@dimen/margin_msmall"
+                    android:layout_marginTop="@dimen/margin_small"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:id="@+id/tvHowtoapply"
+                    android:lineSpacingExtra="2dp"
+                    android:gravity="left"
+                    android:textSize="14sp"
+                    android:textColor="@color/dark_gray"
+                    android:paddingBottom="@dimen/margin_msmall"
+                    android:layout_marginTop="@dimen/margin_small"/>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
+

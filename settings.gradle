@@ -1,0 +1,1 @@
+include ':app', ':flickabledialog-release', ':bottomlib-release', ':countrypicker', ':oppwa.mobile-2.7.0', ':viewpagerdotsindicator'

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ic_backbtn"
+        android:layout_width="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back_update" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:adjustViewBounds="true"
+            android:layout_gravity="bottom"
+            android:src="@drawable/fotter_pattern" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:gravity="center|top"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:background="@drawable/bullet"
+                    android:gravity="center"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+                    android:text="2"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:fontFamily="@font/century_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="@string/choose_desired"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+
+                <TextView
+                    android:fontFamily="@font/century_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text="@string/location"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_15sdp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvCountry"
+                    android:layout_width="match_parent"
+
+                    android:layout_marginTop="@dimen/_15sdp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tvGoBack"
+                    android:layout_below="@+id/header"
+                    android:paddingLeft="@dimen/activity_margin"
+                    android:layout_marginBottom="@dimen/_50sdp"
+                    android:paddingTop="@dimen/margin_xsmall"
+                    android:paddingRight="@dimen/activity_margin"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager" />
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </FrameLayout>
+
+</LinearLayout>

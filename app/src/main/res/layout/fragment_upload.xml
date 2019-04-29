@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:visibility="gone"
+
+    tools:context="net.bridgeint.app.fragments.UploadFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/fotter_pattern" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+                <ImageView
+                    android:id="@+id/back_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:padding="@dimen/_10sdp"
+                    android:src="@drawable/ic_back_update" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+
+                    android:text="@string/upload_documents"
+                    android:textColor="@color/white" />
+            </FrameLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/scan_your_documents"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_15sdp" />
+
+                            <android.support.v7.widget.AppCompatImageButton
+
+                                android:id="@+id/scanBtn"
+                                android:layout_width="@dimen/_130sdp"
+                                android:layout_height="@dimen/_130sdp"
+
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:background="@drawable/scan_document" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:background="@drawable/bullet"
+                                android:gravity="center"
+                                android:padding="@dimen/_5sdp"
+                                android:text="@string/or"
+                                android:textColor="@color/white" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/upload"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/_15sdp" />
+
+                            <android.support.v7.widget.AppCompatImageButton
+                                android:id="@+id/addPhotoBtn"
+                                android:layout_width="@dimen/_130sdp"
+                                android:layout_height="@dimen/_130sdp"
+                                android:layout_margin="@dimen/_15sdp"
+                                android:background="@drawable/formgallary_document_update" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_15sdp"
+                            android:gravity="center">
+
+                            <android.support.v7.widget.AppCompatButton
+
+                                android:id="@+id/btn_submit"
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="@dimen/_40sdp"
+                                android:background="@drawable/red_button"
+
+                                android:gravity="center"
+
+                                android:text="@string/done"
+                                android:textAllCaps="true"
+                                android:textColor="@color/white" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </ScrollView>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

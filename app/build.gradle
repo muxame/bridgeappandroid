@@ -1,0 +1,138 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.25.4'
+    }
+}
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'bridge'
+            keyPassword 'bridge'
+            storeFile file('/home/milind/TryAndApplyUpdated/bridge_app.jks')
+            storePassword 'bridge'
+        }
+    }
+    compileSdkVersion 26
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    defaultConfig {
+        applicationId "net.bridgeint.app"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 108
+        versionName '1.0.8'
+        multiDexEnabled true
+        resConfigs "ar", "en", "ru"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.config
+    }
+    buildTypes {
+        debug {
+            minifyEnabled false
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+        preDexLibraries = false
+    }
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+    buildToolsVersion '28.0.3'
+    productFlavors {
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven { url "https://repo.commonsware.com.s3.amazonaws.com" }
+    maven { url 'https://maven.google.com' }
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation project(':oppwa.mobile-2.7.0')
+    implementation project(':flickabledialog-release')
+    implementation project(':bottomlib-release')
+    implementation project(':countrypicker')
+    implementation files('libs/YouTubeAndroidPlayerApi.jar')
+    implementation('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') {
+        transitive = true
+    }
+    //    implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:3.0.3'
+    implementation('io.socket:socket.io-client:0.8.3') {
+        exclude group: 'org.json', module: 'json'
+    }
+    implementation 'com.github.traex.rippleeffect:library:1.3'
+    implementation 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'uk.co.chrisjenx:calligraphy:2.3.0'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.github.chriselder:expandable-recycler-view:v1.0.0'
+    implementation 'com.daimajia.easing:library:2.0@aar'
+    implementation 'com.daimajia.androidanimations:library:2.2@aar'
+    implementation 'com.prolificinteractive:material-calendarview:1.4.3'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.2.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.2.0'
+    implementation 'com.google.firebase:firebase-messaging:11.0.4'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.6.0'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation 'net.bohush.geometricprogressview:geometricprogressview:1.1.1'
+    implementation 'gun0912.ted:tedpermission:2.2.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.github.flepsik:progress-ring-view:1.1.2'
+    implementation 'com.github.chathuralakmal:AndroidImagePopup:1.0.9'
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    implementation 'com.loopj.android:android-async-http:1.4.9'
+    implementation 'com.google.android.gms:play-services-maps:11.0.4'
+    implementation 'com.google.android.gms:play-services-location:11.0.4'
+    implementation 'io.nlopez.smartlocation:library:3.3.1'
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.4.+'
+    implementation 'at.blogc:expandabletextview:1.0.3'
+    implementation 'me.relex:circleindicator:1.2.2@aar'
+    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+    implementation 'com.jsibbold:zoomage:1.1.0'
+    implementation 'com.davemorrissey.labs:subsampling-scale-image-view:3.8.0'
+    implementation 'com.opentok.android:opentok-android-sdk:2.13.0'
+    implementation 'pub.devrel:easypermissions:1.2.0'
+    implementation 'com.facebook.android:facebook-share:4.39.0'
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+    implementation 'com.google.firebase:firebase-core:11.0.4'
+    implementation 'me.relex:circleindicator:1.2.2'
+}
+apply plugin: 'com.google.gms.google-services'

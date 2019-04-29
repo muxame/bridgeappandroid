@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/youtube_view"
+        android:visibility="gone"
+        android:background="@drawable/place_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:tint="@color/colorPrimary"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_play"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <com.jsibbold.zoomage.ZoomageView
+        android:id="@+id/ivUni"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+         android:scaleType="fitCenter"
+        android:src="@drawable/logo"
+        app:zoomage_animateOnReset="true"
+        app:zoomage_maxScale="8"
+        app:zoomage_minScale="0"
+        app:zoomage_restrictBounds="false"
+        app:zoomage_translatable="true"
+        app:zoomage_zoomable="true" />
+</LinearLayout>

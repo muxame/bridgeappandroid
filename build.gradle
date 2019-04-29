@@ -1,0 +1,45 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+//ext {
+//    sdkVersion = 26
+//    minSdkVersion = 9
+//    buildToolsVersion = '26.0.0'
+//    supportLibVersion = '25.3.1'
+//    libraryVersion = '2.1.5'
+//    libraryVersionCode = 215
+//}
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.3.1'
+        classpath 'com.google.gms:google-services:4.0.1'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0'
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
+        classpath 'com.novoda:bintray-release:0.3.4'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+
+        maven { url  "http://dl.bintray.com/steveliles/maven" }
+        maven { url "https://jitpack.io" }
+
+        maven { url 'https://maven.google.com' }
+        maven { url 'https://tokbox.bintray.com/maven' }
+
+        configurations.all {
+            resolutionStrategy {
+                force 'com.facebook.android:facebook-android-sdk:4.34.0'
+            }
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

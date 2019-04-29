@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="activity_margin">16dp</dimen>
+
+    <!--Maingins-->
+    <dimen name="margin_xxsmall">3dp</dimen>
+    <dimen name="margin_msmall">5dp</dimen>
+    <dimen name="margin_xsmall">6dp</dimen>
+    <dimen name="margin_small">12dp</dimen>
+    <dimen name="margin_mediumx_14">14dp</dimen>
+    <dimen name="margin_medium">18dp</dimen>
+    <dimen name="margin_xlarge">36dp</dimen>
+    <!-- Text Sizes -->
+    <dimen name="text_small_10">10sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_xsmall">16sp</dimen>
+    <dimen name="text_medium">18sp</dimen>
+    <dimen name="text_large">24sp</dimen>
+    <dimen name="text_xlarge">36sp</dimen>
+
+    <!--Padding-->
+
+</resources>

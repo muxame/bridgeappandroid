@@ -1,0 +1,96 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="Transparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">false</item>
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <!--<item name="android:windowContentOverlay">@null</item>-->
+        <!--<item name="android:windowNoTitle">true</item>-->
+        <!--<item name="android:windowIsFloating">true</item>-->
+        <!--<item name="android:backgroundDimEnabled">false</item>-->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="headerBackground">@color/checkout_header_background_color_light</item>
+        <item name="windowBackground">@color/checkout_background_color_light</item>
+
+        <item name="cancelButtonTintColor">@android:color/white</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="colorControlNormal">#e0e0e0</item>
+
+        <item name="checkoutTitleTextViewStyle">@style/Checkout.TextView.PaymentTitle.Light</item>
+        <item name="checkoutEditTextStyle">@style/Checkout.EditText.Light</item>
+        <item name="checkoutSectionTitleTextViewStyle">@style/Checkout.TextView.SectionTitle.Light</item>
+        <item name="checkoutButtonStyle">@style/Checkout.Button.Light</item>
+    </style>
+    <declare-styleable name="CustomFont">
+        <attr name="fontName" format="string" />
+    </declare-styleable>
+    <style name="CustomDialog" parent="android:Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="MyCustomTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+    <style name="textStyle_ms" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:fontFamily">@font/ms_sans_serif_normal</item>
+
+    </style>
+    <style name="textStyle_ms_bold" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:fontFamily">@font/ms_sans_serif_bold</item>
+
+    </style>
+
+    <style name="MyAlertDialogTheme" parent="Base.Theme.AppCompat.Light.Dialog.Alert">
+        <item name="windowFixedWidthMajor">90%</item>
+        <item name="windowFixedWidthMinor">90%</item>
+
+    </style>
+
+    <style name="DialogTheme" parent="android:Theme.Dialog">
+        <item name="headerBackground">@color/checkout_header_background_color_light</item>
+        <item name="windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="cancelButtonTintColor">@android:color/white</item>
+
+        <item name="colorControlNormal">#e0e0e0</item>
+
+        <item name="checkoutTitleTextViewStyle">@style/Checkout.TextView.PaymentTitle.Light</item>
+        <item name="checkoutEditTextStyle">@style/Checkout.EditText.Light</item>
+        <item name="checkoutSectionTitleTextViewStyle">@style/Checkout.TextView.SectionTitle.Light</item>
+        <item name="checkoutButtonStyle">@style/Checkout.Button.Light</item>
+    </style>
+
+    <style name="Theme.Checkout.LightN"  parent="AppTheme">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+
+        <item name="headerBackground">@color/checkout_header_background_color_light</item>
+        <item name="windowBackground">@color/checkout_background_color_light</item>
+
+        <item name="cancelButtonTintColor">@android:color/white</item>
+
+        <item name="colorControlNormal">#e0e0e0</item>
+
+        <item name="checkoutTitleTextViewStyle">@style/Checkout.TextView.PaymentTitle.Light</item>
+        <item name="checkoutEditTextStyle">@style/Checkout.EditText.Light</item>
+        <item name="checkoutSectionTitleTextViewStyle">@style/Checkout.TextView.SectionTitle.Light</item>
+        <item name="checkoutButtonStyle">@style/Checkout.Button.Light</item>
+
+    </style>
+
+
+</resources>

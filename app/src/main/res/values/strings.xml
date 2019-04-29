@@ -1,0 +1,245 @@
+<resources>
+    <string name="upgrage">Upgrade</string>
+    <string name="student_id">Student ID</string>
+    <string name="app_name">Bridge App</string>
+    <string name="try_apply_counsellor">Try and Apply Counsellor</string>
+    <string name="app_slogan">When education meets convenience</string>
+    <string name="please_wait">Please wait..</string>
+    <string name="network_connectivity">It seems that your network connection is not working</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="facebook_login">Sign in with Facebook</string>
+    <string name="password">Password</string>
+    <string name="or">or</string>
+    <string name="thanks_msg">Thanks for contact us we will get back to you shortly.</string>
+    <string name="by_sign_up">I agree to the <u>Terms &amp; \nConditions</u></string>
+    <string name="verifiy_mobile">Verify Mobile</string>
+    <string name="we_will_send">We\'ll send you a message \non your mobile</string>
+    <string name="mobile_no">Mobile number</string>
+    <string name="we_want_to_verify">We just want to verify that its really you we won\'t send you any promotional messages</string>
+    <string name="send_code">Send Code via SMS</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+
+    <string name="apply">Apply Now</string>
+    <string name="send">Send</string>
+    <string name="apply_now">Apply Now</string>
+    <string name="my_application">My Applications</string>
+    <string name="Previous">Previous</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="notificaiton">Notification</string>
+    <string name="logout">Log out</string>
+    <string name="about_us">About Us</string>
+    <string name="contact_us">Contact us</string>
+    <string name="join_us">Join us on social media</string>
+    <string name="live">Live</string>
+    <string name="proceed">Proceed</string>
+    <string name="select_date">Select the date below on which you want to post the live streaming on your profile</string>
+    <string name="change_pass">Change Password</string>
+    <string name="old_password">Enter Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm New Password</string>
+    <string name="submit">Submit</string>
+    <string name="uploading_image">Uploading Image....</string>
+    <string name="write_msg_here">Write message here...</string>
+    <string name="swipe_to_cancel">Swipe Right to Cancel</string>
+    <string name="logout_text">Do you really want to logout?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="loading_text">Loading Previous Chat</string>
+    <string name="forget_password"><u>Forgot Password?</u></string>
+    <string name="forget_password_update">Forgot Password?</string>
+    <string name="lets_help_you">Let us help you</string>
+    <array name="arr">
+        <item>+971</item>
+    </array>
+    <string name="empty_doc_text">Are you sure? Applying to a university without any documents may occur in rejection of your application. Do you want to continue anyway ?</string>
+    <string name="about_text">"Bridge App is an innovative and comprehensive student recruitment mobile application which enables any student to apply to any university of their choice from anywhere with an internet connection. Students will be able to browse through thousands of universities gaining access to information such as courses, entry requirements, photo/video galleries of dorm rooms, campuses, and much more! \n\n-\tThe student will receive counseling in real time by live chat (audio, video, or chat messages) in English, Arabic, Russian, etc.\n\n-\tWe’re going Live! A very special feature of ours is T&amp;A Live! This offers unique access for both universities and students to be able to communicate with each other live! Any university has the opportunity to go live from their smartphone and communicate with all of our registered students on the App in real-time!\n\n-\tStudents will be able to take advantage of our in-built scanner specifically formulated to automatically crop and take high quality photos of required documents (passport copies, high-school transcripts, recommendation letters, personal statements, etc)\n\n-\tStudents will have access to points of interests by GPS navigation near their chosen university locating the nearest airports, bus stops, train stations, restaurants, and much more!\n"</string>
+    <string name="about_text_2">"Не показывать "</string>
+    <string name="about_text_3">\tWe’re going Live! A very special feature of ours is T&amp;A Live! This offers unique access for both universities and students to be able to communicate with each other live! Any university has the opportunity to go live from their smartphone and communicate with all of our registered students on the App in real-time!</string>
+    <string name="about_text_4">-\tStudents will be able to take advantage of our in-built scanner specifically formulated to automatically crop and take high quality photos of required documents (passport copies, high-school transcripts, recommendation letters, personal statements, etc)</string>
+    <string name="about_text_5">-\tStudents will have access to points of interests by GPS navigation near their chosen university locating the nearest airports, bus stops, train stations, restaurants, and much more!</string>
+    <string name="term_condition">Terms of Service</string>
+    <string name="my_application_detail">My Application Detail</string>
+    <string name="uae_code">+971</string>
+    <string name="algeria_code">+213</string>
+    <string name="bahrain_code">+973</string>
+    <string name="egypt_code">+20</string>
+    <string name="iran_code">+98</string>
+    <string name="iraq_code">+964</string>
+    <string name="israeli_code">+972</string>
+    <string name="jordan_code">+962</string>
+    <string name="kuwait_code">+965</string>
+    <string name="lebanon_code">+961</string>
+    <string name="morocco_code">+212</string>
+    <string name="oman_code">+968</string>
+    <string name="qatar_code">+974</string>
+    <string name="saudiarabia_code">+966</string>
+    <string name="tunisia_code">+216</string>
+    <string name="status">Status</string>
+    <string name="comment">Comments</string>
+    <string name="player_error">Error initializing YouTube player: %s</string>
+
+    <!-- Live app -->
+    <!--<string name="facebook_app_id">1074549832724929</string>-->
+    <string name="facebook_app_id">573453329833411</string>
+    <!--<string name="fb_login_protocol_scheme">fb1074549832724929</string>-->
+    <string name="fb_login_protocol_scheme">fb573453329833411</string>
+
+    <!-- Live App Old-->
+    <!--<string name="facebook_app_id">1117289798438296</string>
+    <string name="fb_login_protocol_scheme">fb1117289798438296</string>-->
+
+
+    <string name="change_language"><u>Change Language</u></string>
+    <string name="change_language_side_menu">Change Language</string>
+    <string name="school_transcript">High School Transcript</string>
+    <string name="recom_letters">Recommendation Letters</string>
+    <string name="pass_copy">Passport Copy</string>
+    <string name="lang_score">English Proficiency Test (IELTS, TOFEL, etc)</string>
+    <string name="personal_statement">Personal Statement</string>
+    <string name="fetch_university">Fetching Universities...</string>
+    <string name="fetch_courses">Fetching Courses...</string>
+    <string name="fetch_country">Fetching Countries...</string>
+    <string name="fetch_degree">Fetching Degrees...</string>
+
+
+    <!-- Device Info Headers -->
+
+    <!-- Preferences-related strings -->
+
+    <!-- Connection preferences strings -->
+
+    <!--
+        <string name="wz_live_use_ssl_title">Connect via SSL</string>
+        <string name="wz_live_use_ssl_summary">Establish a secure connection</string>
+        <string name="wz_live_use_ssl_default_value">false</string>
+    -->
+
+    <!-- Video preferences strings -->
+
+    <!-- Audio preferences strings -->
+
+    <!-- Debug preferences strings -->
+
+
+    <string name="checkout_ui_callback_scheme">checkoutui</string>
+    <string name="payment_button_callback_scheme">paymentbutton</string>
+    <string name="custom_ui_callback_scheme">customui</string>
+    <string name="no_university_live">No University Live Yet</string>
+    <string name="go_live">Click button to go LIVE</string>
+    <string name="permission_need">This app needs access to your camera and mic to make video calls</string>
+
+    <string name="no_results">No Results</string>
+    <string name="todo">TODO</string>
+    <string name="services">Services</string>
+    <string name="check_status">Check Status</string>
+    <string name="chat">Chat</string>
+    <string name="back_to_login">Back to login</string>
+    <string name="next_btn">Next</string>
+    <string name="english">English</string>
+    <string name="arabic">Arabic</string>
+    <string name="russian">Russian</string>
+    <string name="pay">pay</string>
+    <string name="total">Total</string>
+    <string name="payment_status">Payment Status : </string>
+    <string name="write_here">Write here</string>
+    <string name="done">Done</string>
+    <string name="no_applications">No Applications</string>
+    <string name="view">View</string>
+    <string name="cancel">Cancel</string>
+    <string name="pending">Pending</string>
+    <string name="success">Success!</string>
+    <string name="upload_documents">Upload Documents</string>
+    <string name="confirmation">Confirmation</string>
+    <string name="logout_msg">Do you want to logout?</string>
+    <string name="back_msg">Do you want to go back?</string>
+    <string name="choose_language">Choose Language</string>
+    <string name="old_password_msg">Enter Old Password</string>
+    <string name="new_password_msg">Enter New Password</string>
+    <string name="confirm_password_msg">Enter Confirm Password</string>
+    <string name="miss_matche_msg">Confirm Password Mismatched</string>
+    <string name="incorrect_msg">Incorrect Old Password</string>
+    <string name="no_internet">Net Connection Lost</string>
+    <string name="changingpassword">Changing Password</string>
+    <string name="fetchingcourses">Fetching Courses...</string>
+    <string name="select_package">Please select package first</string>
+    <string name="any_spacial_requests">Any special requests?</string>
+
+    <string name="no_example">Example: 780XXXXXX</string>
+    <string name="please_enter_code">Please Enter Code</string>
+    <string name="counselor">Counselor</string>
+    <string name="offline">Away</string>
+    <string name="online">online</string>
+    <string name="under_review">Under Review</string>
+    <string name="approved">Approved</string>
+    <string name="rejected">Rejected</string>
+    <string name="admission_complete">Admission complete</string>
+    <string name="due_for_fees">Due for fees</string>
+    <string name="copies">copies</string>
+    <string name="fatching_application">Fetching My Application...</string>
+    <string name="fatching_package">Fetching Packages...</string>
+    <string name="select_package_first">Please select package first</string>
+    <string name="write_comment">Write Comment</string>
+    <string name="login_with_facebook">Login with Facebook</string>
+    <string name="cod">Cash on Delivery (Available in Jordan)</string>
+    <string name="pay_via_card">Pay via Card</string>
+    <string name="extra_documents">Extra Documents</string>
+    <string name="ok">OK</string>
+    <string name="bundle">Bundle</string>
+    <string name="validation_empty_email_address">Oops! Your email address is required</string>
+    <string name="validation_valid_email_address">Please Enter Valid Email Address</string>
+    <string name="validation_enter_password">Please Enter Password</string>
+    <string name="opps_no_internet">"Oops! There is no internet connection. \n Please make sure you are connected to \nthe internet and try again."</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyC2Nvs05xkoGFOF8LQjZ552dCZt6rCEV9I
+    </string>
+    <string name="dont_show_again">Don\'t show again</string>
+    <string name="selected_desired">Select desired</string>
+    <string name="level_of_study">level of study!</string>
+    <string name="which_discipline">Which discipline</string>
+    <string name="would_you_like_to_study">would you like to study?</string>
+    <string name="choose_desired">Choose desired</string>
+    <string name="location">location</string>
+    <string name="tution_fee">tuition fee</string>
+    <string name="media_gallery">Media Gallery</string>
+    <string name="request_information">REQUEST INFORMATION</string>
+    <string name="average_tution">Average Tuition</string>
+    <string name="acceptance_rate">Acceptance Rate</string>
+    <string name="students">Students</string>
+    <string name="please_select_your_plan">Please select your plan</string>
+    <string name="packages">Packages</string>
+    <string name="view_profile">View Profile</string>
+    <string name="your_message_here">Your message here</string>
+
+    <string name="cant_find__what_">Can\'t find what you\'re looking for? Let us know which country or university you would like to apply to and we will help!</string>
+    <string name="start_verification">Start</string>
+    <string name="youtube">Youtube</string>
+    <string name="scan_your_documents">Scan your documents</string>
+    <string name="upload">Upload</string>
+    <string name="skip">Skip</string>
+    <string name="help">Help</string>
+    <string name="need_help_n_we_can_apply_to_any_university_in_the_world">Need help?  \n We can apply to any university in the world!</string>
+    <string name="empty_email_valid">Oops! Your email address is required</string>
+    <string name="validation_email">Please Enter Valid Email Address</string>
+    <string name="validation_accept_terms_condition">Please accept Terms and condition</string>
+    <string name="validation_password">Please Enter password</string>
+    <string name="validation_last_name">Please Enter Student Last Name</string>
+    <string name="validation_first_name">Please Enter Student First Name</string>
+    <string name="high_school_transcript">High School Transcript</string>
+    <string name="validation_search">Please enter some word to search</string>
+    <string name="exit_confirmation">Please click BACK again to exit</string>
+    <string name="validation_first_name_contact_us">Please enter FirstName</string>
+    <string name="validation_message">Please enter your Message</string>
+    <string name="coming_soon">Coming Soon</string>
+    <string name="image_upload_success">Image uploaded successfully</string>
+    <string name="rec_deleted">Recording Deleted</string>
+    <string name="select_validation_image">Select Atleast 1 Image</string>
+    <string name="we_can_help_you_popup_message">We can help you apply to any university in the world.</string>
+    <string name="continue_btn">Continue</string>
+
+</resources>

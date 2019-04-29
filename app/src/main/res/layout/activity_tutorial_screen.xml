@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Top Sliding Banners -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true" />
+
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+
+
+            app:ci_drawable="@drawable/selected_dot" />
+
+        <net.bridgeint.app.views.XTextView
+            android:id="@+id/tv_skip"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+
+            android:layout_alignParentRight="true"
+
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+
+            android:background="@drawable/ic_close_tutorial"
+            android:padding="@dimen/_5sdp"
+
+
+            android:textColor="@color/red"
+            android:visibility="visible" />
+
+        <net.bridgeint.app.views.XTextView
+            android:id="@+id/tv_previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+
+
+
+            android:padding="@dimen/_15sdp"
+            android:text="@string/Previous"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <net.bridgeint.app.views.XTextView
+            android:id="@+id/tv_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/indicator"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+
+
+            android:padding="@dimen/_15sdp"
+            android:text="@string/next_btn"
+            android:textColor="@color/white"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "330739860273",
+    "firebase_url": "https://try-apply.firebaseio.com",
+    "project_id": "try-apply",
+    "storage_bucket": "try-apply.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:330739860273:android:7d72e58fc8e0fa2e",
+        "android_client_info": {
+          "package_name": "com.devicebee.android.tryapply"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "330739860273-290tsdr1aivaopkacabhl96gca9na2ia.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFBfAVOy1cx5Q_Pw0-ux9xKzuURN53cMA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

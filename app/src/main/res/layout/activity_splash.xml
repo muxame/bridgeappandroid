@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login_update"
+    android:gravity="center"
+    android:orientation="vertical"
+
+    tools:ignore="MissingPrefix">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:src="@drawable/logo_update" />
+
+    <net.bridgeint.app.views.XTextView
+        android:id="@+id/tv_version"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:text="V 1.0"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp" />
+
+</FrameLayout>

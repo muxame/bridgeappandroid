@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:scrollbars="none">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_login_update"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true"
+
+        tools:context="net.bridgeint.app.activities.SigninActivity"
+        tools:ignore="MissingPrefix">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_90sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_25sdp"
+                    android:src="@drawable/logo_update" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    android:layout_marginEnd="@dimen/_25sdp"
+
+                    android:background="@drawable/bottom_line_primary"
+                    android:backgroundTint="@color/black"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_5sdp">
+
+                    <ImageView
+
+                        android:id="@+id/iv_email"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center|start"
+
+                        android:src="@drawable/ic_email_update" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/etEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="7dp"
+                            android:layout_toEndOf="@+id/iv_email"
+
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:fontFamily="@font/century_normal"
+                            android:gravity="start"
+                            android:hint="@string/email"
+                            android:inputType="textEmailAddress"
+
+                            android:maxLines="1"
+
+                            android:padding="@dimen/_5sdp"
+                            android:textColorHint="@color/black"
+
+
+                            android:textDirection="locale"
+                            android:textSize="@dimen/_12sdp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_25sdp"
+                    android:background="@drawable/bottom_line_primary"
+                    android:backgroundTint="@color/black"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_5sdp">
+
+                    <ImageView
+                        android:id="@+id/iv_lock"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center|start"
+
+
+                        android:src="@drawable/ic_password_update" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/etPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_toEndOf="@+id/iv_lock"
+                            android:background="@null"
+                            android:fontFamily="@font/century_normal"
+                            android:hint="@string/password"
+                            android:inputType="textPassword"
+                            android:layoutDirection="locale"
+                            android:maxLines="1"
+                            android:padding="@dimen/_5sdp"
+
+                            android:textAlignment="viewStart"
+                            android:textColorHint="@color/black"
+
+
+                            android:textDirection="locale"
+                            android:textSize="@dimen/_12sdp" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_marginEnd="@dimen/_25sdp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/_10sdp">
+
+                    <TextView
+                        android:id="@+id/forgetPassBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/century_normal"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:text="@string/forget_password"
+                        android:textColor="@color/black"
+
+                        android:textSize="@dimen/_10sdp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center|start"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_create_account"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:src="@drawable/btn_right"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center|bottom"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:id="@+id/txt_change_language"
+                style="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:fontFamily="@font/century_normal"
+                android:gravity="end"
+                android:text="@string/change_language"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp" />
+        </LinearLayout>
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnGetStarted"
+            style="@style/Base.TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/button_transparnt_red_border"
+
+            android:fontFamily="@font/century_normal"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/txt_create_account"
+            style="@style/Base.TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/button_transparnt_red_border"
+            android:fontFamily="@font/century_normal"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="@string/sign_up"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+
+        <LinearLayout
+            android:id="@+id/btnFblogin"
+            android:foreground="?attr/selectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@color/com_facebook_blue"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp">
+
+            <ImageView
+
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:src="@drawable/ic_facebook"
+                android:visibility="visible" />
+
+            <TextView
+
+
+                style="@style/Base.TextAppearance.AppCompat.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/century_normal"
+                android:gravity="end"
+                android:text="@string/login_with_facebook"
+                android:textColor="@color/white" />
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/btnFb"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:src="@drawable/fb_ic"
+                android:visibility="gone" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:text="@string/login_with_facebook"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                app:fontPath="fonts/Ubuntu-Regular.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

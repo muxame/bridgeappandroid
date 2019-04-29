@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:background="@color/white_trans"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivUni"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/place_holder" />
+
+
+        <TextView
+            android:id="@+id/tvAdmissionOpen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/margin_small"
+            android:background="@drawable/admission_btn"
+            android:clickable="true"
+            android:padding="@dimen/margin_small"
+            android:text="Admission Open"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:gravity="center|top"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvUniName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tvAddress"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/century_normal"
+                    android:gravity="center"
+                    android:maxLines="2"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:text="Oxford University,"
+                    android:textAllCaps="true"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/century_normal"
+                    android:singleLine="true"
+                    android:text="London, United Kingdom"
+                    android:textAllCaps="true"
+                    android:visibility="gone"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="#000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="@dimen/_25sdp"
+                    android:layout_marginEnd="@dimen/_25sdp"
+                    android:gravity="center"
+                    android:maxLines="3"
+                    android:textStyle="bold"
+
+                    android:minLines="3"
+                    android:background="@color/white_trans"
+                    android:text="Helllo world"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/gray1"
+                    android:textSize="@dimen/_10sdp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/tv_media_gallary"
+                        android:layout_width="@dimen/_90sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_gravity="center"
+
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/capsule_selector_button_red"
+                        android:gravity="center"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/media_gallery"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10sdp"
+                        android:textStyle="bold" />
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/tv_apply"
+
+                        android:layout_width="@dimen/_90sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/capsule_selector_button_red"
+                        android:gravity="center"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:text="@string/apply"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_10sdp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="2dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/colorPrimary"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

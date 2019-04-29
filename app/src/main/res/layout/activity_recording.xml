@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.bridgeint.app.net.Bridgeint.app.activities.RecordingActivity">
+
+    <camera.VideoCapture
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"></camera.VideoCapture>
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:background="@null"
+            android:id="@+id/ibBack"
+            android:src="@drawable/arrow_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_alignParentLeft="true"
+            />
+
+
+        <ImageButton
+            android:background="@null"
+            android:src="@drawable/ic_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:background="@null"
+            android:src="@drawable/ic_camera_rotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            />
+        <ImageButton
+            android:background="@null"
+            android:src="@drawable/btn_camera_capture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_small"
+            android:layout_centerInParent="true"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:switchMinWidth="0dp"
+            android:background="@android:color/transparent"
+            android:checked="true"
+            android:button="@null"
+            android:padding="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/flash_switch_selector"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingPrefix"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="net.bridgeint.app.net.Bridgeint.app.activities.WebViewActivity">
+
+    <LinearLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:gravity="center"
+        android:weightSum="1"
+        android:background="@color/transparent">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:padding="@dimen/_5sdp"
+            android:src="@drawable/ic_back_update" />
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="0dp"
+            app:fontPath="fonts/Ubuntu-Light.ttf"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:text="@string/about_us"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_medium"
+            android:gravity="center"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webView"/>
+
+</LinearLayout>

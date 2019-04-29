@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/tv_degree_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@drawable/degree_background_red_border"
+        android:gravity="center"
+        android:textAllCaps="true"
+
+        android:fontFamily="@font/centurey_bold"
+        android:textColor="@color/black"
+        android:foreground="?attr/selectableItemBackground"
+        android:textSize="@dimen/_12sdp"
+        android:textStyle="bold"
+        android:text="BechLors Degree"
+        android:padding="@dimen/_10sdp"></android.support.v7.widget.AppCompatButton>
+
+    <!--<com.devicebee.tryapply.views.XTextView-->
+   <!---->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+      <!---->
+     <!---->
+       <!--/>-->
+
+
+</LinearLayout>
